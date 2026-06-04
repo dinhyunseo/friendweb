@@ -1,0 +1,52 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.group label {
+  font-weight: 600;
+  color: #333;
+}
+
+.input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.input:focus {
+  border-color: #d4af37;
+  outline: none;
+}
+
+.error {
+  color: #d9534f;
+  font-size: 0.85rem;
+  margin-top: -0.5rem;
+}
+
+.submitBtn {
+  margin-top: 1rem;
+  padding: 14px;
+  background: #d4af37;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.submitBtn:hover {
+  background: #b8962f;
+}

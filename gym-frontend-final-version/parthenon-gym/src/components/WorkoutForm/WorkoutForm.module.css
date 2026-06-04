@@ -1,0 +1,94 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 24px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.form h3 {
+  margin: 0 0 5px 0;
+  color: #1a1a1a;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+/* Стилизация вывода названия тренировки внутри формы */
+.form p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #d4af37;
+  text-align: center;
+  font-weight: 600;
+}
+
+.input {
+  width: 100%;
+  padding: 12px;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  font-family: inherit;
+  transition: border-color 0.3s;
+}
+
+.input:focus {
+  border-color: #d4af37;
+  outline: none;
+}
+
+/* Фиксируем размер поля описания */
+textarea.input {
+  min-height: 100px;
+  resize: none; /* Убирает раздражающую возможность менять размер мышкой */
+}
+
+.error {
+  color: #d9534f;
+  font-size: 0.8rem;
+  margin-top: -10px;
+  font-weight: 500;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.buttons button {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+/* Стиль основной кнопки (Далее / Создать) */
+.buttons button:not(:first-child) {
+  background-color: #d4af37;
+  color: white;
+}
+
+.buttons button:not(:first-child):hover {
+  background-color: #b8962f;
+}
+
+/* Стиль кнопки "Назад" */
+.buttons button:first-child {
+  background-color: #f0f0f0;
+  color: #555;
+}
+
+.buttons button:first-child:hover {
+  background-color: #e0e0e0;
+}

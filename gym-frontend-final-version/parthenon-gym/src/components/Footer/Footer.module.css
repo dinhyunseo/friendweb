@@ -1,0 +1,21 @@
+.footer {
+  background-color: #1a1a1a;
+  color: #d4af37;
+  padding: 2rem 1rem;
+  text-align: center;
+  border-top: 3px solid #d4af37;
+  margin-top: auto; /* Если использовать Flex-контейнер для всей страницы */
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.links {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}

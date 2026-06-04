@@ -1,0 +1,67 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #e0e0e0;
+  padding: 20px;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+  flex: 1;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  margin: 0 0 10px 0;
+  color: #333;
+}
+
+.card p {
+  margin: 5px 0;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.detailsBtn, .cancelBtn {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.detailsBtn {
+  background: #d4af37;
+  color: white;
+}
+
+.detailsBtn:hover {
+  background: #b8962f;
+}
+
+.cancelBtn {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.cancelBtn:hover {
+  background: #f5c6cb;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
